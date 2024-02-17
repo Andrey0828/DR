@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #232323;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 3px solid black;
+}
+
+input::placeholder {
+    color: gray;
+    font-family: monospace;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+p {
+    color: #232323;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h1 {
+    color: #232323;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+img {
+    display: none;
+    width: 90%;
+}
+
+.shake {
+    animation: shakeAnimation 0.5s infinite;
+}
+
+@keyframes shakeAnimation {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-10px, 0);
+    }
+
+    40% {
+        transform: translate(10px, 0);
+    }
+
+    60% {
+        transform: translate(-10px, 0);
+    }
+
+    80% {
+        transform: translate(10px, 0);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
